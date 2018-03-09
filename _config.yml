@@ -14,20 +14,20 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 lang: en-US
-title: My Awesome Site
+title: "ldeck's musings"
 email:
-description:
+description: Random tech musings from downunder.
 baseurl: # the optional subpath of your site, e.g. "/blog"
 url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 author:
-  name:
-  twitter:
-  picture:
-twitter_username:
-github_username:
-logo: # path of site logo, e.g. "/assets/images/logo.png"
-search: # true, false (default)
-search_full_content: false # true, false (default)
+  name: Lachlan Deck
+  twitter: lachlandeck
+  picture: /assets/images/me.png
+twitter_username: lachlandeck
+github_username: ldeck
+logo: /assets/images/logo.png
+search: true
+search_full_content: true
 search_provider: # lunr (default), algolia
 algolia:
   application_id: # YOUR_APPLICATION_ID
@@ -35,9 +35,12 @@ algolia:
   search_only_api_key: # YOUR_SEARCH_ONLY_API_KEY
   powered_by: # true (default), false
 
+image: /assets/images/logo.png
+
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-basically-basic
+# theme: jekyll-theme-basically-basic
+remote_theme: "mmistakes/jekyll-theme-basically-basic"
 plugins: # previsously gems
   - jekyll-feed
   - jekyll-seo-tag
@@ -55,28 +58,25 @@ exclude:
   - .asset-cache
   - .bundle
   - .codeclimate.yml
-  - .editorconfig
-  - .gitattributes
   - .jekyll-assets-cache
   - .sass-cache
   - .scss-lint.yml
   - CHANGELOG
   - Gemfile
   - Gemfile.lock
-  - LICENSE
   - node_modules
-  - Rakefile
   - README
   - vendor/bundle/
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-  - /docs # ignore Basically Basic sample site
-  - /example # ignore Basically Basic dev site
 
 # Front Matter Defaults
 defaults:
-  # _posts
+  - scope:
+      path: assets/images
+    values:
+      image: true
   - scope:
       path: "_posts"
       type: posts
