@@ -64,4 +64,4 @@ Perform the initial steps provided by [GitHub Pages](https://pages.github.com). 
     ```
 1. View your handy work at https://*yourusername*.github.io.
 
-Well, stay tuned for part 2 for producing a blog site.
+Well, in [part 2]({% post_url 2018-04-25-blogging-with-jekyll-pt2 %}) we'll move towards getting jekyll up and running.
